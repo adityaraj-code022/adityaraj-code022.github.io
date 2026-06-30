@@ -4,16 +4,25 @@ index.html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Aditya Raj | Portfolio</title>
+    <meta name="description" content="Aditya Raj Portfolio Website">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- smooth scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <nav>
+    <nav aria-label="Main Navigation">
         <h2>Aditya Raj</h2>
 
         <ul id="navLinks">
@@ -39,13 +48,14 @@ index.html
     <div class="home-content reveal">
         <h1>Aditya Raj</h1>
 
-        <h3 class="typing"><span id="typedText"></span><span class="cursor">|</span></h3>
+        <h3 class="typing">
+            <span id="typedText"></span><span class="cursor">|</span>
+        </h3>
 
         <p>
             Welcome to my official portfolio website.
-            Here you can explore my achievements,
-            NCC journey, paintings, coding projects,
-            AI work, certificates and much more.
+            Here you can explore my achievements, NCC journey,
+            paintings, coding projects, AI work and certificates.
         </p>
 
         <div class="home-btns">
@@ -66,11 +76,8 @@ index.html
     <div class="about-content reveal">
         <div class="about-text">
             <p>
-                I am a passionate student with a deep interest in Artificial Intelligence,
-                coding, and art. As an NCC Air Wing Commander, I have learned discipline,
-                leadership, and teamwork, which I bring into every project I take on.
-                I love turning ideas into working solutions, whether it's a line of code
-                or a stroke of paint.
+                I am a student interested in Artificial Intelligence, coding, art and leadership.
+                As an NCC Air Wing Commander, I have learned discipline and teamwork.
             </p>
 
             <div class="about-info">
@@ -88,7 +95,7 @@ index.html
                 </div>
                 <div class="info-item">
                     <i class="fa-solid fa-jet-fighter"></i>
-                    <span>NCC Air Wing Commander</span>
+                    <span>NCC Commander</span>
                 </div>
             </div>
         </div>
@@ -103,17 +110,17 @@ index.html
         <div class="card">
             <i class="fa-solid fa-jet-fighter-up card-icon"></i>
             <h3>Air Wing Commander</h3>
-            <p>Led cadets and represented the unit in drills, camps, and ceremonial parades.</p>
+            <p>Leadership, drills, camps and national representation.</p>
         </div>
         <div class="card">
             <i class="fa-solid fa-medal card-icon"></i>
-            <h3>Camps & Training</h3>
-            <p>Participated in NCC camps building discipline, leadership and team spirit.</p>
+            <h3>Training</h3>
+            <p>Discipline, teamwork and physical training experience.</p>
         </div>
         <div class="card">
             <i class="fa-solid fa-flag card-icon"></i>
-            <h3>Ceremonial Duties</h3>
-            <p>Took part in parades and national events representing the Air Wing.</p>
+            <h3>Events</h3>
+            <p>Participated in parades and ceremonial duties.</p>
         </div>
     </div>
 </section>
@@ -126,17 +133,19 @@ index.html
         <div class="card">
             <i class="fa-solid fa-trophy card-icon"></i>
             <h3>Achievement 1</h3>
-            <p>Describe your achievement here — competition, award, or recognition.</p>
+            <p>Add your real achievement here.</p>
         </div>
+
         <div class="card">
             <i class="fa-solid fa-award card-icon"></i>
             <h3>Achievement 2</h3>
-            <p>Describe your achievement here — competition, award, or recognition.</p>
+            <p>Add your real achievement here.</p>
         </div>
+
         <div class="card">
             <i class="fa-solid fa-star card-icon"></i>
             <h3>Achievement 3</h3>
-            <p>Describe your achievement here — competition, award, or recognition.</p>
+            <p>Add your real achievement here.</p>
         </div>
     </div>
 </section>
@@ -146,34 +155,12 @@ index.html
     <h2 class="section-title reveal">Skills</h2>
 
     <div class="skills-grid reveal">
-        <div class="skill-card">
-            <i class="fa-brands fa-html5"></i>
-            <span>HTML5</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-css3-alt"></i>
-            <span>CSS3</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-js"></i>
-            <span>JavaScript</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-python"></i>
-            <span>Python</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-brain"></i>
-            <span>AI / ML</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-brands fa-github"></i>
-            <span>Git & GitHub</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-palette"></i>
-            <span>Painting</span>
-        </div>
+        <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+        <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+        <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="skill-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="skill-card"><i class="fa-solid fa-brain"></i><span>AI</span></div>
+        <div class="skill-card"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
     </div>
 </section>
 
@@ -182,29 +169,19 @@ index.html
     <h2 class="section-title reveal">Projects</h2>
 
     <div class="card-grid reveal">
-        <div class="card project-card">
-            <h3>Project Name 1</h3>
-            <p>Short description of the project, what it does, and tech used.</p>
-            <div class="project-links">
-                <a href="#" class="btn btn-small">Live Demo</a>
-                <a href="#" class="btn btn-small btn-outline">GitHub</a>
-            </div>
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Describe your project here.</p>
         </div>
-        <div class="card project-card">
-            <h3>Project Name 2</h3>
-            <p>Short description of the project, what it does, and tech used.</p>
-            <div class="project-links">
-                <a href="#" class="btn btn-small">Live Demo</a>
-                <a href="#" class="btn btn-small btn-outline">GitHub</a>
-            </div>
+
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Describe your project here.</p>
         </div>
-        <div class="card project-card">
-            <h3>Project Name 3</h3>
-            <p>Short description of the project, what it does, and tech used.</p>
-            <div class="project-links">
-                <a href="#" class="btn btn-small">Live Demo</a>
-                <a href="#" class="btn btn-small btn-outline">GitHub</a>
-            </div>
+
+        <div class="card">
+            <h3>Project 3</h3>
+            <p>Describe your project here.</p>
         </div>
     </div>
 </section>
@@ -214,10 +191,10 @@ index.html
     <h2 class="section-title reveal">Gallery</h2>
 
     <div class="gallery-grid reveal">
-        <div class="gallery-item"><img src="https://via.placeholder.com/400x300/161b22/58a6ff?text=Artwork+1" alt="Artwork 1"></div>
-        <div class="gallery-item"><img src="https://via.placeholder.com/400x300/161b22/58a6ff?text=Artwork+2" alt="Artwork 2"></div>
-        <div class="gallery-item"><img src="https://via.placeholder.com/400x300/161b22/58a6ff?text=Artwork+3" alt="Artwork 3"></div>
-        <div class="gallery-item"><img src="https://via.placeholder.com/400x300/161b22/58a6ff?text=Artwork+4" alt="Artwork 4"></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/400x300" alt=""></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/400x300" alt=""></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/400x300" alt=""></div>
+        <div class="gallery-item"><img src="https://via.placeholder.com/400x300" alt=""></div>
     </div>
 </section>
 
@@ -227,49 +204,39 @@ index.html
 
     <div class="card-grid reveal">
         <div class="card">
-            <i class="fa-solid fa-certificate card-icon"></i>
+            <i class="fa-solid fa-certificate"></i>
             <h3>Certificate 1</h3>
-            <p>Name of course / issuer / year.</p>
         </div>
+
         <div class="card">
-            <i class="fa-solid fa-certificate card-icon"></i>
+            <i class="fa-solid fa-certificate"></i>
             <h3>Certificate 2</h3>
-            <p>Name of course / issuer / year.</p>
         </div>
+
         <div class="card">
-            <i class="fa-solid fa-certificate card-icon"></i>
+            <i class="fa-solid fa-certificate"></i>
             <h3>Certificate 3</h3>
-            <p>Name of course / issuer / year.</p>
         </div>
     </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2 class="section-title reveal">Contact Me</h2>
+    <h2 class="section-title reveal">Contact</h2>
 
-    <div class="contact-wrap reveal">
-        <form class="contact-form" onsubmit="return false;">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-
-        <div class="social-links">
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-    </div>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
 </section>
 
 <footer>
-    <p>&copy; <span id="year"></span> Aditya Raj. All rights reserved.</p>
+    <p>© <span id="year"></span> Aditya Raj</p>
 </footer>
 
 <script src="script.js"></script>
 
 </body>
-</html>
+    </html>
